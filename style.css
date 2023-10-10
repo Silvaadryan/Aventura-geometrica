@@ -9,9 +9,6 @@ background: rgb(0, 0, 0);
 
 }
 
-
-
-
 .opções {
     position: absolute;
     top: 50%;
@@ -56,5 +53,7 @@ background: rgb(0, 0, 0);
     background: linear-gradient(0deg, rgba(0, 195, 223, 1) 31%, rgba(0, 0, 253, 0.7764355742296919) 100%);
     color: white; 
 }
-
+.col{
+  
+}
 

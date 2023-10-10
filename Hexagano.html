@@ -21,23 +21,8 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-<script>
-    function calcularAreaHexagono() {
-
-        const ladoDoHexagono = parseFloat(document.getElementById("RH").value);
-
-
-        if (!isNaN(ladoDoHexagono) && ladoDoHexagono > 0) {
-            const areaDoHexagono = (Math.pow(ladoDoHexagono, 2) * (3 * Math.sqrt(3))) / 2
-            document.getElementById("resultado").innerHTML = areaDoHexagono
-        
-    
-        } else {
-            console.log("Por favor, insira um valor válido para o lado do hexágono.");
-        }
-    }
-
-</script>
+<script src="calculadora.js"></script>
+  
 
 </head>
 

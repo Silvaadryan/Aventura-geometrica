@@ -14,27 +14,8 @@
         <link rel="manifest" href="geometria.png">
         <link rel="mask-icon" href="geometria.png" color="#7952b3">
         <link rel="icon" href="geometria.png">
-    <script>
-        // Função para calcular a área de um trapézio irregular
-        function calcularAreaTrapezioIrregular() {
-            // Solicitar ao usuário os valores das bases maior, menor e altura do trapézio
-            const baseMaior = parseFloat(document.getElementById("BaseMaior").value);
-            const baseMenor = parseFloat(document.getElementById("BaseMenor").value);
-            const altura = parseFloat(document.getElementById("Altura").value);
-
-            const area = ((baseMaior + baseMenor) / 2) * altura;
-
-
-            // Verificar se os valores inseridos são números válidos
-            if (!isNaN(baseMaior) && !isNaN(baseMenor) && !isNaN(altura) && baseMaior > 0 && baseMenor > 0 && altura > 0) {
-                const areaDoTrapezio = (area);
-                document.getElementById("resultado").innerHTML = area
-            } else {
-                alert("Por favor, insira valores numéricos válidos maiores que zero.");
-            }
-        }
-
-    </script>
+        <script src="calculadora.js"></script>
+    
 </head>
 
 <body>

@@ -23,27 +23,7 @@
         <link rel="manifest" href="geometria.png">
         <link rel="mask-icon" href="geometria.png" color="#7952b3">
         <link rel="icon" href="geometria.png">
-    <script>
-
-        function calcularAreaDoCirculo() {
-            const raio = parseFloat(document.getElementById("Raio").value);
-
-            if (isNaN(raio) || raio <= 0) {
-                alert("Por favor, digite um valor válido para o raio.");
-                return;
-            }
-
-            const pi = Math.PI; // Valor de pi
-            const area = pi * Math.pow(raio, 2); // Fórmula da área do círculo
-            document.getElementById("Rcirculo").innerHTML = area
-           /*  var resultado = (`A área do círculo com raio ${raio} é ${area.toFixed(2)}`); */
-            
-        }
-
-
-
-
-    </script>
+   
 </head>
 
 <body>

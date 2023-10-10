@@ -15,23 +15,8 @@
         <link rel="manifest" href="geometria.png">
         <link rel="mask-icon" href="geometria.png" color="#7952b3">
         <link rel="icon" href="geometria.png">
-<script>
+        <script src="calculadora.js"></script>
 
-    function calcularAreaQuadrado() {
-        var lado = parseFloat(document.getElementById("Lado").value)
-        var area = lado * lado;
-
-        document.getElementById("Rquadrado").innerHTML = area
-        
-        if (!isNaN(lado) && lado > 0) {
-            const areaDoQuadrado = calcularAreaQuadrado();
-            
-        } else {
-        alert("Por favor, insira um valor numérico válido maior que zero."); 
-        }
-    }
-
-</script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
