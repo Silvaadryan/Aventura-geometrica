@@ -14,90 +14,91 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <script src="calculadora.js"></script>
+    <script src="calculadora.js"></script>
 </head>
 
 
 
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Calculadora de aréa</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Formas geometricas
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="index.html">inicio</a></li>
-                                <li><a class="dropdown-item" href="quadrado.html">Quadrado</a></li>
-                                <li><a class="dropdown-item" href="retangulo.html">Retangulo</a></li>
-                                <li><a class="dropdown-item" href="Trapezoide Irregular.html">Trapezoide irregular</a></li>
-                                <li><a class="dropdown-item" href="coroa_circulo.html">Coroa do circulo</a></li>
-                                <li><a class="dropdown-item" href="circulo.html">Circulo</a></li>
-                                <li><a class="dropdown-item" href="Hexagano.html">Hexagano </a></li>
-                                <li><a class="dropdown-item" href="Pentagono.html">Pentagono</a></li>
-                                <li><a class="dropdown-item" href="Triangulo.html">Triangulo </a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Calculadora de aréa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Formas geometricas
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="index.html">inicio</a></li>
+                            <li><a class="dropdown-item" href="quadrado.html">Quadrado</a></li>
+                            <li><a class="dropdown-item" href="retangulo.html">Retangulo</a></li>
+                            <li><a class="dropdown-item" href="Trapezoide Irregular.html">Trapezoide irregular</a></li>
+                            <li><a class="dropdown-item" href="coroa_circulo.html">Coroa do circulo</a></li>
+                            <li><a class="dropdown-item" href="circulo.html">Circulo</a></li>
+                            <li><a class="dropdown-item" href="Hexagano.html">Hexagano </a></li>
+                            <li><a class="dropdown-item" href="Pentagono.html">Pentagono</a></li>
+                            <li><a class="dropdown-item" href="Triangulo.html">Triangulo </a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
 
-        <form id="calculotroncopiramede">
-
-
-            <div class="tronco">
-                <h2>Area do Triangulo</h2>
-                <div class="bnt">
-
-                    <input id="Btriangulo" class="form-control" type="number" placeholder=" Digite o cumprimento do rentagulo "
-                        style="text-align: center;">
-                </div>
-
-                <div class="bnt">
-
-                    <input id="Atriangulo" class="form-control" type="number" placeholder="Digite a largura do retangulo"
-                        style="text-align: center;">
-                </div>
+    <form id="calculotroncopiramede">
 
 
-                <div class="bnt">
-
-                    <button type="button" class="btn btn-outline-primary" onclick="calcularAreadotriangulo()">Calcular</button>
-                </div>
-
-                <div>
-                    <label for="Rtriangulo">Área do Tronco do Triangulo é:</label>
-                    <span id="Rtriangulo"></span>
-                </div>
-
+        <div class="tronco">
+            <h2> Área do Triangulo</h2>
+            <div class="bnt">
+                <p>Digite a altura altura </p>
+                <input id="Btriangulo" class="form-control" type="number"
+                    placeholder=" " style="text-align: center;">
             </div>
 
-        </form>
+            <div class="bnt">
+                <p>Digite o valor da base:</p>
+                <input id="Atriangulo" class="form-control" type="number" placeholder=""
+                    style="text-align: center;">
+            </div>
+
+
+            <div class="bnt">
+
+                <button type="button" class="btn btn-outline-primary"
+                    onclick="calcularAreadotriangulo()">Calcular</button>
+            </div>
+
+            <div>
+                <label for="Rtriangulo">Área do Tronco do Triangulo é:</label>
+                <h1 id="Rtriangulo"></h1>
+            </div>
+
+        </div>
+
+    </form>
 
 
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-            crossorigin="anonymous"></script>
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
 
 </html>
